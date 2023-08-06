@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Good Watch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Auto Complete -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+
+  <link rel= "stylesheet" type= "text/css" href= "../static/style.css">
+
+  <script type="text/javascript" src="../static/films.js"></script>
+</head>
+
+<body id="content" style="font-family: 'Noto Sans JP', sans-serif;">
+    
+    <div class='container' style="display: block;">
+        <h1 class="" style="display: block;text-align: center;margin: 20px 0;padding: 20px 0;">Only the good ones.</h1>
+
+        <div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;padding: 20px;">
+            <input type="text" name="movie" class="movie form-control text-dark" id="autoComplete" autocomplete="off" placeholder="Enter the Movie Name" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818;align-items: center;margin: 10px auto;" required="required" />
+            <ul id="food_list"></ul>
+            <br>
+        </div>
+
+        <div class="form-group" style="text-align: center;">
+            <!-- <button class="btn btn-primary btn-block movie-button" style="background-color: #e50914;text-align: center;border-color: #e50914;width:120px;" disabled="true" >Enter</button> -->
+            <button type="button" class="btn btn-danger movie-button" disabled="true">Get My Movie</button>
+        </div>
+    </div>
+    <div id="loader" class="text-center">
+    </div>
+        
+    <div class="fail">
+        <center><h3>Sorry! The movie you requested is not in our database. 
+            Please check the spelling or try with other movies!</h3></center>
+    </div>
+
+    <div class="results">
+        
+    </div>
+	</div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@10.2.1/dist/autoComplete.min.js"></script> -->
+    <!-- <script type="text/javascript" src="{{url_for('static', filename='autocomplete.js')}}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+
+    <script type="text/javascript" src="../static/autocomplete.js"></script>
+    <script type="text/javascript" src="../static/recommend.js"></script>
+    
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
